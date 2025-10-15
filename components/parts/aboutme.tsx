@@ -9,7 +9,7 @@ const AboutMe = () => {
     ]
 
     return (
-        <div id="about" className="flex w-full min-h-[calc(100vh-150px)] items-center justify-center px-8 py-12">
+        <div id="about" className="flex w-full h-[calc(100vh-80px)] mt-[80px] items-center justify-center px-8 ">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12 max-w-6xl w-full">
                 {/* Text Content */}
                 <div className="w-full lg:w-1/2 space-y-6">

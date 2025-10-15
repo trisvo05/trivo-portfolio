@@ -4,6 +4,8 @@ import Header from "@/components/my_components/header";
 import MySideBar from "@/components/my_components/sidebar";
 import AboutMe from "@/components/parts/aboutme";
 import Awards from "@/components/parts/awards";
+import Experience from "@/components/parts/experience";
+import Skills from "@/components/parts/skills";
 // import MySideBar from "@/components/my_components/sidebar";
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
         <div className="flex-1 p-10 ml-[300px]">
           <AboutMe/>
           <Awards/>
+          <Experience/>
+          <Skills/>
         </div>
       </main>
     </div>
