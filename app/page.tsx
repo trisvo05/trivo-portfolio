@@ -6,6 +6,7 @@ import AboutMe from "@/components/parts/aboutme";
 import Awards from "@/components/parts/awards";
 import Contact from "@/components/parts/contact";
 import Experience from "@/components/parts/experience";
+import ProjectsSection from "@/components/parts/projects";
 import Skills from "@/components/parts/skills";
 import SkillsSection from "@/components/parts/skills";
 // import Skills from "@/components/parts/skills";
@@ -17,15 +18,15 @@ export default function Home() {
       <Header/>
       <main className="flex ">
         <MySideBar/>
-        <div className="flex-1 p-10 ml-[300px]">
+        <div className="flex-1  ml-[300px] ">
           <AboutMe/>
           <Awards/>
           <Experience/>
           {/* <SkillsSection/>
            */}
           <Skills/>
+          <ProjectsSection/>
           <Contact/>
-
         </div>
       </main>
     </div>

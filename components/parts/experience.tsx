@@ -45,7 +45,7 @@ export default function Experience() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-full mb-6">
             <BriefcaseBusiness className="w-8 h-8 text-slate-900" />
             </div>
-            <h1 className="text-4xl font-bold text-gray-700 mb-4">
+            <h1 className="text-4xl font-bold text-[#003366] mb-4">
                 Kinh nghiệm làm việc
             </h1>
         </div>
@@ -58,12 +58,12 @@ export default function Experience() {
             {experiences.map((exp, index) => (
               <div key={exp.id} className="relative pl-20">
                 {/* Timeline Dot */}
-                <div className="absolute left-5 top-6 w-7 h-7 bg-blue-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
+                <div className="absolute left-5 top-6 w-7 h-7 bg-cyan-600 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
                   <Briefcase className="w-3 h-3 text-white" />
                 </div>
 
                 {/* Content Card */}
-                <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white">
+                <Card className="group bg-white  rounded-2xl overflow-hidden border-gray-300 border-1 hover:border-[#003366]/30 transition-all duration-300 backdrop-blur-md  hover:transform hover:scale-105  hover:shadow-2xl hover:shadow-[#003366]/10">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       {/* Company Logo */}
@@ -76,7 +76,7 @@ export default function Experience() {
                         <h3 className="text-xl font-bold text-slate-800 mb-1">
                           {exp.position}
                         </h3>
-                        <p className="text-lg text-blue-600 font-semibold mb-2">
+                        <p className="text-lg text-cyan-600 font-semibold mb-2">
                           {exp.company}
                         </p>
 

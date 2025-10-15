@@ -68,7 +68,7 @@ export default function Skills() {
     <section id="skills" className="py-16 px-4 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
+          <h2 className="text-4xl font-bold text-[#003366] dark:text-white mb-4">
             Kỹ Năng Kỹ Thuật
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400">
@@ -78,7 +78,7 @@ export default function Skills() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillCategories.map((category, idx) => (
-            <Card key={idx} className="border-2 hover:shadow-xl transition-all duration-300 bg-white dark:bg-slate-800">
+            <Card key={idx} className="border-slate-200 hover:border-[#003366]/30 transition-all duration-300 hover:shadow-2xl hover:shadow-[#003366]/10 bg-white dark:bg-slate-800">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <div className={`p-2 rounded-lg bg-gradient-to-r ${category.color}`}>

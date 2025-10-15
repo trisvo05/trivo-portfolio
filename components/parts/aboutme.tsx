@@ -5,7 +5,7 @@ const AboutMe = () => {
         { icon: Linkedin, href: "https://www.linkedin.com/in/minh-tri-b15183284/", label: "LinkedIn", color: "hover:text-blue-600" },
         { icon: Github, href: "https://github.com/dashboard", label: "GitHub", color: "hover:text-gray-800" },
         { icon: Facebook, href: "https://www.facebook.com/tri.vo.863244/", label: "Facebook", color: "hover:text-blue-500" },
-        { icon: Instagram, href: "https://www.instagram.com/trivo502/", label: "Instagram", color: "hover:text-pink-600" }
+        { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-pink-600" }
     ]
 
     return (
@@ -15,7 +15,7 @@ const AboutMe = () => {
                 <div className="w-full lg:w-1/2 space-y-6">
                     <div className="space-y-3">
                         <h1 className="text-5xl font-bold text-gray-900 leading-tight">
-                            Hi! I&apos;m <span className="text-blue-600">Võ Minh Trí</span>
+                            Hi! I&apos;m <span className="text-cyan-600">Võ Minh Trí</span>
                         </h1>
                         <h2 className="text-3xl font-bold text-gray-700">
                             FullStack Developer
