@@ -49,17 +49,19 @@ const AboutMe = () => {
             I am a third-year student majoring in Information Technology, with
             the goal of becoming a Software Developer and AI Developer in the
             future.
+            <br/>
+            With a clear direction and strong interest in technology, I’m looking for opportunities to grow my skills, join real-world projects, and bring value to the tech community.
           </p>
 
-          <p className="text-gray-600 leading-relaxed text-lg">
+          {/* <p className="text-gray-600 leading-relaxed text-lg">
             I have a solid foundational knowledge and am continuously developing
             advanced skills in backend web development and AI development. I
             have internship experience as a backend developer, focusing on
             multi-database system handling.
-          </p>
-          <p className="text-gray-600 leading-relaxed text-lg">
-            With a clear direction and strong interest in technology, I’m looking for opportunities to grow my skills, join real-world projects, and bring value to the tech community.
-          </p>
+          </p> */}
+          {/* <p className="text-gray-600 leading-relaxed text-lg "> */}
+          
+          {/* </p> */}
   
           {/* Social Links */}
           <div className="flex items-center gap-4 pt-4">
