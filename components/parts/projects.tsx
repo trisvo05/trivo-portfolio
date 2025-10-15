@@ -8,49 +8,49 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-      title: "E-Commerce Platform",
-      description: "Nền tảng thương mại điện tử hiện đại với tích hợp thanh toán và quản lý kho hàng thông minh.",
-      liveDemo: "https://demo.example.com",
+      image: "/project_ecoverse.png",
+      title: "EcoVerse - Sàn thương mại điện tử Xanh",
+      description: "Sàn hoạt động theo mô hình B2C, kết nối trực tiếp các nhà sản xuất, nhà cung cấp sản phẩm xanh với người tiêu dùng, tạo ra một hệ sinh thái thương mại minh bạch, an toàn và bền vững",
+      liveDemo: "https://ecoverse-vn.vercel.app/",
       details: "#"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      title: "Analytics Dashboard",
-      description: "Dashboard phân tích dữ liệu real-time với biểu đồ tương tác và báo cáo tự động.",
-      liveDemo: "https://demo.example.com",
+      image: "/project_vietcycle.png",
+      title: "VietCycle - Nền tảng số hóa và tuần hoàn phế thải công nghiệp",
+      description: "VietCycle+ là nền tảng số hóa toàn diện cho phế thải công nghiệp và xây dựng,kết hợp công nghệ AI, marketplace, logistics và pháp lý số hóa. Chúng tôi giúp doanh nghiệp biến chi phí xử lý phế thải thành nguồn thu từ kinh tế tuần hoàn,đồng thời đảm bảo 100% minh bạch trong toàn bộ quy trình.",
+      liveDemo: "https://vietcycle-frontend.vercel.app/",
       details: "#"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
-      title: "Mobile Banking App",
-      description: "Ứng dụng ngân hàng di động với bảo mật cao và giao diện thân thiện với người dùng.",
-      liveDemo: "https://demo.example.com",
+      image: "/project_ecofundx",
+      title: "EcoFundX - Crowdfunding for Sustainable Products",
+      description: "EcoFundX là nền tảng crowdfunding đầu tiên tập trung hoàn toàn vào các dự án bền vững với môi trường.Trong khi các nền tảng hiện tại chỉ hỗ trợ đại trà, EcoFundX xây dựng một hệ sinh thái riêng biệt, tạo môi trường uy tín cho các nhà sáng lập “xanh” và người dùng có ý thức môi trường",
+      liveDemo: "https://ecofundx.vercel.app/",
       details: "#"
     },
     {
       id: 4,
       image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
-      title: "Project Management Tool",
-      description: "Công cụ quản lý dự án với tính năng collaboration, timeline tracking và báo cáo tiến độ.",
+      title: "RedLotus - Nền tảng chăm sóc sức khỏe tinh thần ứng dụng AI và Gamafication",
+      description: "RedLotus là nền tảng chăm sóc sức khỏe tinh thần tiên tiến, kết hợp trí tuệ nhân tạo và gamification để mang đến trải nghiệm cá nhân hóa, thú vị và hiệu quả",
       liveDemo: "https://demo.example.com",
       details: "#"
     },
     {
       id: 5,
       image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80",
-      title: "AI Chatbot Platform",
-      description: "Platform chatbot AI thông minh với khả năng học máy và xử lý ngôn ngữ tự nhiên.",
+      title: "Dự án Chatbot bằng kĩ thuật RAG đầu tiên của tôi",
+      description: "Hệ thống Chatbot sử dụng kỹ thuật RAG giúp người dùng tra cứu và hiểu văn bản pháp luật một cách nhanh chóng. Chatbot truy xuất thông tin từ các văn bản luật, nghị định, thông tư và tạo câu trả lời tự nhiên, dễ hiểu, kèm trích dẫn chính xác",
       liveDemo: "https://demo.example.com",
       details: "#"
     },
     {
       id: 6,
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80",
-      title: "Social Media Manager",
-      description: "Công cụ quản lý mạng xã hội đa nền tảng với lên lịch đăng bài và phân tích insights.",
+      title: "Vodka AudioBook - Nền tảng Sách nói",
+      description: "RedLotus là nền tảng chăm sóc sức khỏe tinh thần tiên tiến, kết hợp trí tuệ nhân tạo và gamification để mang đến trải nghiệm cá nhân hóa, thú vị và hiệu quả. Người dùng được hỗ trợ quản lý cảm xúc, phát triển thói quen tích cực và nâng cao sức khỏe tinh thần qua các thử thách, trò chơi và các phân tích thông minh",
       liveDemo: "https://demo.example.com",
       details: "#"
     }
@@ -62,11 +62,11 @@ const ProjectsSection = () => {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#003366] mb-4 tracking-tight">
-            Dự Án Của Tôi
+            Dự Án Nổi Bật
           </h2>
           <div className="w-24 h-1 bg-[#003366] mx-auto mb-6"></div>
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-            Khám phá các dự án công nghệ mới nhất với thiết kế hiện đại và hiệu suất tối ưu
+            {/* Khám phá các dự án công nghệ mới nhất với thiết kế hiện đại và hiệu suất tối ưu */}
           </p>
         </div>
 

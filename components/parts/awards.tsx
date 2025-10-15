@@ -18,7 +18,7 @@ export default function Awards() {
   const [awards] = useState([
     {
       id: 1,
-      images: ["/giay_chung_nhan.jpg", "/avatar.JPG"],
+      images: ["/techxpo2025_cert.png", "/avatar.JPG"],
       rank: "Top 8",
       title: "TechXpo Challenge 2025",
       organizer: "VinTechTalent Club (VinUniversity)",
