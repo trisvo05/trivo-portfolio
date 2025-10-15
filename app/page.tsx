@@ -6,6 +6,8 @@ import AboutMe from "@/components/parts/aboutme";
 import Awards from "@/components/parts/awards";
 import Experience from "@/components/parts/experience";
 import Skills from "@/components/parts/skills";
+import SkillsSection from "@/components/parts/skills";
+// import Skills from "@/components/parts/skills";
 // import MySideBar from "@/components/my_components/sidebar";
 
 export default function Home() {
@@ -18,7 +20,9 @@ export default function Home() {
           <AboutMe/>
           <Awards/>
           <Experience/>
-          <Skills/>
+          {/* <SkillsSection/>
+           */}
+           <Skills/>
         </div>
       </main>
     </div>

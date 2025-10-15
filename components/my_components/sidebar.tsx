@@ -33,34 +33,45 @@ const MySideBar = () => {
     { icon: PhoneCall, label: "Contact", href: "#contact" },
   ];
 
-  // ✅ State lưu section đang active
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("about");
 
-  // ✅ Theo dõi khi scroll đến từng section
+  // --- Scroll Spy ---
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    const options = { threshold: 0.5 }; // 50% section trong viewport
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(`#${entry.target.id}`);
+    const handleScroll = () => {
+      let current = "";
+      navItems.forEach((item) => {
+        const el = document.querySelector(item.href) as HTMLElement;
+        if (el) {
+          const sectionTop = el.offsetTop - 100; // trừ chiều cao header
+          if (window.scrollY >= sectionTop) {
+            current = item.href.replace("#", "");
+          }
         }
       });
-    }, options);
+      setActiveSection(current);
+    };
 
-    sections.forEach((section) => observer.observe(section));
-
-    return () => sections.forEach((section) => observer.unobserve(section));
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // --- Cuộn mượt khi nhấn ---
+  const handleScrollTo = (id: string) => {
+    const el = document.querySelector(id);
+    const headerHeight = 80; // chiều cao header của bạn
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="w-[300px] h-[calc(100vh)] bg-[#003366] flex flex-col justify-between text-white shadow-2xl overflow-hidden fixed top-0">
-      {/* Decorative elements */}
+    <div className="w-[300px] h-[100vh] bg-[#003366] flex flex-col justify-between text-white shadow-2xl overflow-hidden fixed top-0 left-0 z-30">
+      {/* Hiệu ứng nền */}
       <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400 rounded-full blur-3xl opacity-10"></div>
       <div className="absolute bottom-0 left-0 w-40 h-40 bg-cyan-400 rounded-full blur-3xl opacity-10"></div>
 
-      {/* Profile Section */}
+      {/* Avatar */}
       <div className="relative z-10 pt-[calc(32px+80px)] pb-6">
         <div className="relative mx-auto w-[150px] h-[150px] group">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full blur-md opacity-75 group-hover:opacity-100 transition-opacity"></div>
@@ -72,39 +83,46 @@ const MySideBar = () => {
         </div>
       </div>
 
-      {/* Navigation Section */}
+      {/* Navigation */}
       <nav className="flex-1 px-4 space-y-1 relative z-10">
         {navItems.map((item, index) => {
           const Icon = item.icon;
-          const isActive = activeSection === item.href;
+          const isActive = activeSection === item.href.replace("#", "");
           return (
-            <a
+            <button
               key={index}
-              href={item.href}
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 group backdrop-blur-sm border
-              ${
+              onClick={() => handleScrollTo(item.href)}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 group backdrop-blur-sm border ${
                 isActive
-                  ? "bg-white/20 border-white/30 translate-x-1 text-cyan-100"
-                  : "hover:bg-white/10 hover:border-white/20 border-transparent"
+                  ? "bg-white/15 border-cyan-400 text-cyan-300 translate-x-1"
+                  : "border-transparent hover:bg-white/10 hover:border-white/20"
               }`}
             >
               <Icon
-                className={`w-5 h-5 transition-colors ${
-                  isActive ? "text-cyan-200" : "text-cyan-300 group-hover:text-cyan-200"
-                }`}
+                className={`w-5 h-5 ${
+                  isActive
+                    ? "text-cyan-300"
+                    : "text-cyan-300 group-hover:text-cyan-200"
+                } transition-colors`}
               />
-              <span className="font-medium text-sm">{item.label}</span>
+              <span
+                className={`font-medium text-sm ${
+                  isActive ? "text-cyan-200" : "text-white"
+                }`}
+              >
+                {item.label}
+              </span>
               <ChevronRight
                 className={`w-4 h-4 ml-auto transition-opacity ${
                   isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"
                 }`}
               />
-            </a>
+            </button>
           );
         })}
       </nav>
 
-      {/* Settings Section */}
+      {/* Settings */}
       <div className="p-4 border-t border-white/10 relative z-10">
         <DropdownMenu>
           <DropdownMenuTrigger className="flex items-center gap-3 w-full px-4 py-3 rounded-lg transition-all duration-300 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-white/20">
@@ -140,7 +158,7 @@ const MySideBar = () => {
               <DropdownMenuPortal>
                 <DropdownMenuSubContent className="bg-white shadow-xl border border-gray-200 rounded-lg">
                   <DropdownMenuItem className="hover:bg-gray-100 cursor-pointer text-gray-700">
-                    🇬🇧 Tiếng Anh
+                    🇬🇧 English
                   </DropdownMenuItem>
                   <DropdownMenuItem className="hover:bg-gray-100 cursor-pointer text-gray-700">
                     🇻🇳 Tiếng Việt

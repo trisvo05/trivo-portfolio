@@ -8,8 +8,8 @@ const experiences = [
     logo: '🏢',
     position: 'Intern Backend Developer',
     company: 'IVS Tech Viet Nam',
-    period: '2022 - Hiện tại',
-    description: 'Phát triển và duy trì các ứng dụng web quy mô lớn sử dụng React, Next.js. Tối ưu hiệu suất và trải nghiệm người dùng. Hướng dẫn và review code cho team junior.'
+    period: '3/2025 - 6/2025',
+    description: 'Xử lý hệ thống nhiều cơ sở dữ liệu , đồng bộ và khôi phục dữ liệu trong Dự án về Giáo dục'
   },
 //   {
 //     id: 2,

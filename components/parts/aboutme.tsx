@@ -2,10 +2,10 @@ import { Facebook, Github, Instagram, Linkedin } from "lucide-react"
 
 const AboutMe = () => {
     const socialLinks = [
-        { icon: Linkedin, href: "#", label: "LinkedIn", color: "hover:text-blue-600" },
-        { icon: Github, href: "#", label: "GitHub", color: "hover:text-gray-800" },
-        { icon: Facebook, href: "#", label: "Facebook", color: "hover:text-blue-500" },
-        { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-pink-600" }
+        { icon: Linkedin, href: "https://www.linkedin.com/in/minh-tri-b15183284/", label: "LinkedIn", color: "hover:text-blue-600" },
+        { icon: Github, href: "https://github.com/dashboard", label: "GitHub", color: "hover:text-gray-800" },
+        { icon: Facebook, href: "https://www.facebook.com/tri.vo.863244/", label: "Facebook", color: "hover:text-blue-500" },
+        { icon: Instagram, href: "https://www.instagram.com/trivo502/", label: "Instagram", color: "hover:text-pink-600" }
     ]
 
     return (
@@ -40,6 +40,7 @@ const AboutMe = () => {
                                     <a
                                         key={index}
                                         href={social.href}
+                                        target="_blank"
                                         aria-label={social.label}
                                         className={`p-2 rounded-full bg-gray-100 transition-all duration-300 hover:scale-110 hover:bg-gray-200 ${social.color}`}
                                     >

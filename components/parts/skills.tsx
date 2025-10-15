@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code2, Database, Server, Cloud } from 'lucide-react';
 
-export default function SkillsSection() {
+export default function Skills() {
   const skillCategories = [
     {
       title: 'Frontend',
