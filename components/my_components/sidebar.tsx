@@ -76,7 +76,7 @@ const MySideBar = () => {
         <div className="relative mx-auto w-[150px] h-[150px] group">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full blur-md opacity-75 group-hover:opacity-100 transition-opacity"></div>
           <img
-            src="/avatar.jpg"
+            src="/avatar.JPG"
             alt="Profile"
             className="relative h-full w-full rounded-full object-cover border-4 border-white/20 shadow-xl"
           />
