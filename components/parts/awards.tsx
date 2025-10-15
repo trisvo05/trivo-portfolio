@@ -18,7 +18,7 @@ export default function Awards() {
   const [awards] = useState([
     {
       id: 1,
-      images: ["/techxpo2025_cert.png", "/avatar.JPG"],
+      images: ["/techxpo2025_cert.png", "/techxpo_2.JPG","/techxp_3.jpg","/techxpo_4.JPG","/techxpo_5.png","/techxpo_6.png","/techxpo_7.png"],
       rank: "Top 8",
       title: "TechXpo Challenge 2025",
       organizer: "VinTechTalent Club (VinUniversity)",
@@ -27,17 +27,17 @@ export default function Awards() {
     },
     {
       id: 2,
-      images: ["/p_innovation_cetificate.jpg", "avatar.JPG"],
+      images: ["/p_innovation_cert.jpg", "/ecofundx_2.jpg","/ecofundx_3.png"],
       rank: "Top 6",
       title:
-        "Cuộc thi Sản phẩm sinh viên đổi mới sáng tạo P-Innovation 2025",
+        "Cuộc thi Sản phẩm đổi mới sáng tạo P-Innovation 2025",
       organizer: "Học viện Công nghệ Bưu chính Viễn thông",
       month: "Tháng 5",
       year: "2025",
     },
     {
       id: 3,
-      images: ["/aic2024_cert.jpg", "avatar.JPG"],
+      images: ["/aic2024_cert.jpg", "aic.jpg"],
       rank: "Top 5",
       title: "Cuộc thi AI Challenge 2024",
       organizer: "Viện Khoa học Kỹ thuật Bưu điện (PTIT)",
@@ -82,7 +82,7 @@ export default function Awards() {
             <Award className="w-8 h-8 text-slate-900" />
           </div>
           <h1 className="text-4xl font-bold text-[#003366] mb-4">
-            Giải Thưởng & Thành Tích
+            Awards & Honors
           </h1>
         </div>
 
@@ -160,7 +160,7 @@ export default function Awards() {
                 <div className="relative flex items-center justify-center">
                   <button
                     onClick={prevImage}
-                    className="absolute left-3 bg-black/40 hover:bg-black/60 p-2 rounded-full"
+                    className="absolute left-3 bg-black/40 hover:bg-black/60 p-2 rounded-full cursor-pointer"
                   >
                     <ChevronLeft className="w-6 h-6 text-white" />
                   </button>
@@ -175,7 +175,7 @@ export default function Awards() {
                     onClick={nextImage}
                     className="absolute right-3 bg-black/40 hover:bg-black/60 p-2 rounded-full"
                   >
-                    <ChevronRight className="w-6 h-6 text-white" />
+                    <ChevronRight className="w-6 h-6 text-white cursor-pointer" />
                   </button>
                 </div>
 

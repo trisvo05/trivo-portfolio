@@ -4,21 +4,7 @@ import { Code2, Database, Server, Cloud } from 'lucide-react';
 
 export default function Skills() {
   const skillCategories = [
-    {
-      title: 'Frontend',
-      icon: <Code2 className="w-5 h-5" />,
-      color: 'from-blue-500 to-cyan-500',
-      skills: [
-        { name: 'Next.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
-        { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-        { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
-        { name: 'Ant Design', logo: 'https://images.seeklogo.com/logo-png/38/1/ant-design-logo-png_seeklogo-380495.png' },
-        { name: 'ShadcnUI', logo: 'https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png' },
-        { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-
- 
-      ]
-    },
+    
     {
       title: 'Backend',
       icon: <Server className="w-5 h-5" />,
@@ -32,6 +18,21 @@ export default function Skills() {
         { name: 'Flask', logo: 'https://icon.icepanel.io/Technology/png-shadow-512/Flask.png' },
         // { name: 'REST API', logo: '' },
 
+      ]
+    },
+    {
+      title: 'Frontend',
+      icon: <Code2 className="w-5 h-5" />,
+      color: 'from-blue-500 to-cyan-500',
+      skills: [
+        { name: 'Next.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+        { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
+        { name: 'Ant Design', logo: 'https://images.seeklogo.com/logo-png/38/1/ant-design-logo-png_seeklogo-380495.png' },
+        { name: 'ShadcnUI', logo: 'https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png' },
+        { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+
+ 
       ]
     },
     {
@@ -67,10 +68,10 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#003366] dark:text-white mb-4">
-            Kỹ Năng Kỹ Thuật
+            Technical Skills
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400">
-            Công nghệ và công cụ tôi sử dụng hàng ngày
+            Technology and tools I use every day
           </p>
         </div>
 

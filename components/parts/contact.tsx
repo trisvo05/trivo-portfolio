@@ -3,7 +3,7 @@ const Contact = () =>{
         <section id="contact" className="py-16 text-center bg-gray-50">
   <h2 className="text-4xl font-bold mb-4 text-[#003366]">Contact Me</h2>
   <p className="text-gray-600 max-w-xl mx-auto mb-8">
-    I’m currently open to freelance or full-time opportunities.
+    I’m currently open to freelance or part-time opportunities.
     Feel free to reach out if you’d like to work together.
   </p>
 

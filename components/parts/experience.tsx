@@ -46,7 +46,7 @@ export default function Experience() {
             <BriefcaseBusiness className="w-8 h-8 text-slate-900" />
             </div>
             <h1 className="text-4xl font-bold text-[#003366] mb-4">
-                Kinh nghiệm làm việc
+                Work Experience
             </h1>
         </div>
 

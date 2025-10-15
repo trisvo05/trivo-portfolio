@@ -24,7 +24,7 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      image: "/project_ecofundx",
+      image: "/projects_ecofundx.png",
       title: "EcoFundX - Crowdfunding for Sustainable Products",
       description: "EcoFundX là nền tảng crowdfunding đầu tiên tập trung hoàn toàn vào các dự án bền vững với môi trường.Trong khi các nền tảng hiện tại chỉ hỗ trợ đại trà, EcoFundX xây dựng một hệ sinh thái riêng biệt, tạo môi trường uy tín cho các nhà sáng lập “xanh” và người dùng có ý thức môi trường",
       liveDemo: "https://ecofundx.vercel.app/",
@@ -32,7 +32,7 @@ const ProjectsSection = () => {
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+      image: "/redlotus.png",
       title: "RedLotus - Nền tảng chăm sóc sức khỏe tinh thần ứng dụng AI và Gamafication",
       description: "RedLotus là nền tảng chăm sóc sức khỏe tinh thần tiên tiến, kết hợp trí tuệ nhân tạo và gamification để mang đến trải nghiệm cá nhân hóa, thú vị và hiệu quả",
       liveDemo: "https://demo.example.com",
@@ -40,17 +40,17 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80",
-      title: "Dự án Chatbot bằng kĩ thuật RAG đầu tiên của tôi",
+      image: "/rag.png",
+      title: "Dự án Chatbot bằng kĩ thuật RAG hỗ trợ tư vấn pháp lý",
       description: "Hệ thống Chatbot sử dụng kỹ thuật RAG giúp người dùng tra cứu và hiểu văn bản pháp luật một cách nhanh chóng. Chatbot truy xuất thông tin từ các văn bản luật, nghị định, thông tư và tạo câu trả lời tự nhiên, dễ hiểu, kèm trích dẫn chính xác",
       liveDemo: "https://demo.example.com",
       details: "#"
     },
     {
       id: 6,
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80",
+      image: "./vodka.png",
       title: "Vodka AudioBook - Nền tảng Sách nói",
-      description: "RedLotus là nền tảng chăm sóc sức khỏe tinh thần tiên tiến, kết hợp trí tuệ nhân tạo và gamification để mang đến trải nghiệm cá nhân hóa, thú vị và hiệu quả. Người dùng được hỗ trợ quản lý cảm xúc, phát triển thói quen tích cực và nâng cao sức khỏe tinh thần qua các thử thách, trò chơi và các phân tích thông minh",
+      description: "Vodka Audiobook là nền tảng nghe sách nói hiện đại, cung cấp hàng nghìn đầu sách đa dạng từ văn học, kỹ năng sống, phát triển bản thân đến kinh doanh và khoa học. Người dùng có thể dễ dàng tìm kiếm, nghe offline, tạo danh sách yêu thích và trải nghiệm nội dung chất lượng mọi lúc, mọi nơi.",
       liveDemo: "https://demo.example.com",
       details: "#"
     }
@@ -62,7 +62,7 @@ const ProjectsSection = () => {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#003366] mb-4 tracking-tight">
-            Dự Án Nổi Bật
+            Featured Projects
           </h2>
           <div className="w-24 h-1 bg-[#003366] mx-auto mb-6"></div>
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
