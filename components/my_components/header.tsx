@@ -50,9 +50,12 @@ export default function Header() {
           href="mailto:minhtrivo2005gg@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-cyan-400 transition-all duration-300 border-b-2 border-transparent hover:border-cyan-400 pb-1"
+          className="  hover:text-cyan-400 transition-all duration-300 border-b-2 border-transparent hover:border-cyan-400 pb-1"
         >
-          Email Me
+          {/* <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg
+        " alt="" /> */}
+        <div>Email Me</div>
+          
         </a>
         <a
           href="https://www.linkedin.com/in/minh-tri-b15183284/"
@@ -60,6 +63,8 @@ export default function Header() {
           rel="noopener noreferrer"
           className="hover:text-cyan-400 transition-all duration-300 border-b-2 border-transparent hover:border-cyan-400 pb-1"
         >
+          {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg
+          " alt="" /> */}
           LinkedIn
         </a>
         <a
@@ -68,6 +73,8 @@ export default function Header() {
           rel="noopener noreferrer"
           className="hover:text-cyan-400 transition-all duration-300 border-b-2 border-transparent hover:border-cyan-400 pb-1"
         >
+          {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg
+            " alt="" /> */}
           Github
         </a>
       </div>

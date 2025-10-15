@@ -4,6 +4,7 @@ import Header from "@/components/my_components/header";
 import MySideBar from "@/components/my_components/sidebar";
 import AboutMe from "@/components/parts/aboutme";
 import Awards from "@/components/parts/awards";
+import Contact from "@/components/parts/contact";
 import Experience from "@/components/parts/experience";
 import Skills from "@/components/parts/skills";
 import SkillsSection from "@/components/parts/skills";
@@ -22,7 +23,9 @@ export default function Home() {
           <Experience/>
           {/* <SkillsSection/>
            */}
-           <Skills/>
+          <Skills/>
+          <Contact/>
+
         </div>
       </main>
     </div>
